@@ -28,7 +28,6 @@ gpu_*.sh: Sample SLURM batch scripts for running the pipeline (training predicto
 ⚙️ Installation
 We recommend using Conda to manage your environment:
 
-Bash
 conda create -n generate310 python=3.10
 conda activate generate310
 
@@ -44,32 +43,27 @@ The generative pipeline operates in sequential stages. Sample SLURM scripts are 
 1. Train the Property Predictor (Chemprop)
 Train a directed-message passing neural network to predict your target properties.
 
-Bash
 sbatch gpu_chemprop.sh
 
 2. Train the VGAE Prior
 Learn the latent space of your training dataset to act as a regularization gate.
 
-Bash
 sbatch gpu_vgae_and_z.sh
 
 3. Pre-train the Sequence Generator
 Train the base RNN model via supervised learning on your valid SELFIES dataset.
 
-Bash
 sbatch gpu_gen_condition_origin.sh
 
 4. Multi-Objective RL Fine-Tuning
 Fine-tune the generator to maximize property rewards while staying within the VGAE latent boundaries.
 
-Bash
 sbatch gpu_rl_vgae_soft_congen.sh
 Note: You can adjust the gating strategy (--vgae-gate), predictor weights (--weights), and duplication penalties directly in the shell script.
 
 5. Analysis and Plotting
 Generate paper-ready figures, radar charts, and chemical space visualizations (t-SNE/UMAP).
 
-Bash
 sbatch gpu_aizynth_3.sh
 
 🤝 Contributing and Future Innovations

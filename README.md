@@ -1,7 +1,7 @@
 Generative Molecular Design via Multi-Objective RL and VGAE Gating
 This repository contains the official implementation of our framework for targeted molecular design. It leverages a Stack-Augmented RNN sequence generator (operating on SELFIES) fine-tuned via Multi-Objective Reinforcement Learning (RL). To ensure chemical validity and adherence to the target chemical space, the RL agent is constrained by a Variational Graph Autoencoder (VGAE) acting as a latent-space gatekeeper.
 
-🌟 Key Features
+#🌟 Key Features
 Robust Representation: Utilizes SELFIES for 100% chemically valid sequence generation.
 
 VGAE Latent Regularization: Prevents the RL agent from exploiting the reward function by constraining generation to a learned latent space (using Mahalanobis/Euclidean distance thresholds).
@@ -12,7 +12,7 @@ Teacher Forcing & "Pulse" Injection: Supports injecting known high-performing se
 
 Comprehensive Penalties: Built-in penalty systems for sequence length, heavy atom counts, and duplication (with LRU caching) to encourage diverse and compact generation.
 
-📂 Repository Structure
+#📂 Repository Structure
 train_rl_multiobj.py: The core Multi-Objective RL training loop using Policy Gradient. Handles soft/hard VGAE gating, Chemprop reward integration, and sequence sampling.
 
 reinforcement.py: Implements the ReLeaSE-style policy gradient logic for the sequence generator.
@@ -25,7 +25,7 @@ train_vgae_ref2.py / vgae_prior_GAT.py: Scripts to train the Variational Graph A
 
 gpu_*.sh: Sample SLURM batch scripts for running the pipeline (training predictors, pre-training generators, RL fine-tuning, and plotting).
 
-⚙️ Installation
+#⚙️ Installation
 We recommend using Conda to manage your environment:
 
 conda create -n generate310 python=3.10
@@ -36,7 +36,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 
 pip install rdkit selfies chemprop numpy pandas tqdm joblib
 
-# 🚀 Usage Pipeline
+#🚀 Usage Pipeline
 The generative pipeline operates in sequential stages. Sample SLURM scripts are provided for each step.
 
 1. Train the Property Predictor (Chemprop)
@@ -65,7 +65,7 @@ Generate paper-ready figures, radar charts, and chemical space visualizations (t
 
 sbatch gpu_aizynth_3.sh
 
-🤝 Contributing and Future Innovations
+#🤝 Contributing and Future Innovations
 This repository is intended to serve as a foundational framework for generative molecular design. We strongly encourage the computational chemistry and machine learning communities to build upon this work.
 
 Whether you want to propose algorithmic improvements to the VGAE gating mechanism, design novel multi-objective reward functions, or adapt the pipeline to entirely new chemical domains beyond electrolytes, organic photovoltaics, and energetic materials—your innovations are highly welcome!

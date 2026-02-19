@@ -34,10 +34,9 @@ conda activate generate310
 # Install PyTorch (adjust CUDA version as needed)
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 
-# Install cheminformatics and ML dependencies
 pip install rdkit selfies chemprop numpy pandas tqdm joblib
 
-🚀 Usage Pipeline
+# 🚀 Usage Pipeline
 The generative pipeline operates in sequential stages. Sample SLURM scripts are provided for each step.
 
 1. Train the Property Predictor (Chemprop)

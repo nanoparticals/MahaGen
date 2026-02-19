@@ -45,36 +45,30 @@ The generative pipeline operates in sequential stages. Sample SLURM scripts are 
 Train a directed-message passing neural network to predict your target properties.
 
 Bash
-bash gpu_chemprop.sh
+sbatch gpu_chemprop.sh
 
 2. Train the VGAE Prior
 Learn the latent space of your training dataset to act as a regularization gate.
 
 Bash
-python train_vgae_ref2.py \
-  --input data/Li_iron.csv \
-  --smiles-col smiles \
-  --keep-header \
-  --z-dim 64 \
-  --save ckpts/vgae_prior.pt
+sbatch gpu_vgae_and_z.sh
 
 3. Pre-train the Sequence Generator
 Train the base RNN model via supervised learning on your valid SELFIES dataset.
 
 Bash
-bash gpu_gen_condition_origin.sh
+sbatch gpu_gen_condition_origin.sh
+
 4. Multi-Objective RL Fine-Tuning
 Fine-tune the generator to maximize property rewards while staying within the VGAE latent boundaries.
 
 Bash
-bash gpu_rl_vgae_soft_congen.sh
+sbatch gpu_rl_vgae_soft_congen.sh
 Note: You can adjust the gating strategy (--vgae-gate), predictor weights (--weights), and duplication penalties directly in the shell script.
 
 5. Analysis and Plotting
 Generate paper-ready figures, radar charts, and chemical space visualizations (t-SNE/UMAP).
 
 Bash
-bash gpu_aizynth_3.sh
+sbatch gpu_aizynth_3.sh
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.

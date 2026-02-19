@@ -1,0 +1,37 @@
+SYSTEM = QM9_Benchmark_B3LYP_Gap_Dipole
+
+! Electronic Relaxation
+PREC   = Accurate
+ENCUT  = 500
+EDIFF  = 1E-6
+ISMEAR = 0
+SIGMA  = 0.05
+NELM   = 100
+
+! Ionic Relaxation (Static Calculation)
+IBRION = -1
+NSW    = 0
+
+! B3LYP Functional Setup
+LHFCALC = .TRUE.
+GGA     = B3
+AEXX    = 0.20
+AGGAX   = 0.72
+AGGAC   = 0.81
+ALDAC   = 0.19
+
+! Algorithm for Hybrid Functional
+ALGO    = Damped
+TIME    = 0.4
+
+! Properties (Dipole & Gap)
+LDIPOL  = .TRUE.
+IDIPOL  = 4
+DIPOL   = 0.5 0.5 0.5
+LORBIT  = 11
+NEDOS   = 2000
+
+! Misc
+ISYM    = 0
+LREAL   = .FALSE.
+NCORE   = 4

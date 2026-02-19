@@ -1,0 +1,118 @@
+Fold 0
+Model 0 best validation rmse = 0.081381 on epoch 210
+Model 0 test rmse = 0.081888
+Model 1 best validation rmse = 0.081213 on epoch 461
+Model 1 test rmse = 0.087586
+Model 2 best validation rmse = 0.083004 on epoch 468
+Model 2 test rmse = 0.075894
+Model 3 best validation rmse = 0.078907 on epoch 16
+Model 3 test rmse = 0.119870
+Model 4 best validation rmse = 0.085416 on epoch 669
+Model 4 test rmse = 0.078142
+Model 5 best validation rmse = 0.076967 on epoch 325
+Model 5 test rmse = 0.080905
+Model 6 best validation rmse = 0.083348 on epoch 388
+Model 6 test rmse = 0.076678
+Model 7 best validation rmse = 0.071057 on epoch 33
+Model 7 test rmse = 0.095542
+Model 8 best validation rmse = 0.080199 on epoch 480
+Model 8 test rmse = 0.079196
+Model 9 best validation rmse = 0.075704 on epoch 434
+Model 9 test rmse = 0.077623
+Ensemble test rmse = 0.060346
+Fold 1
+Model 0 best validation rmse = 0.096003 on epoch 976
+Model 0 test rmse = 0.121140
+Model 1 best validation rmse = 0.106913 on epoch 803
+Model 1 test rmse = 0.134703
+Model 2 best validation rmse = 0.099897 on epoch 1390
+Model 2 test rmse = 0.128275
+Model 3 best validation rmse = 0.110716 on epoch 3628
+Model 3 test rmse = 0.147992
+Model 4 best validation rmse = 0.101141 on epoch 1018
+Model 4 test rmse = 0.132866
+Model 5 best validation rmse = 0.102863 on epoch 648
+Model 5 test rmse = 0.122668
+Model 6 best validation rmse = 0.104113 on epoch 1073
+Model 6 test rmse = 0.131384
+Model 7 best validation rmse = 0.103258 on epoch 558
+Model 7 test rmse = 0.126756
+Model 8 best validation rmse = 0.098370 on epoch 406
+Model 8 test rmse = 0.130694
+Model 9 best validation rmse = 0.102220 on epoch 1497
+Model 9 test rmse = 0.134240
+Ensemble test rmse = 0.104541
+Fold 2
+Model 0 best validation rmse = 0.071112 on epoch 824
+Model 0 test rmse = 0.127722
+Model 1 best validation rmse = 0.073021 on epoch 455
+Model 1 test rmse = 0.090267
+Model 2 best validation rmse = 0.067914 on epoch 859
+Model 2 test rmse = 0.104120
+Model 3 best validation rmse = 0.073751 on epoch 990
+Model 3 test rmse = 0.108495
+Model 4 best validation rmse = 0.072002 on epoch 854
+Model 4 test rmse = 0.119558
+Model 5 best validation rmse = 0.065160 on epoch 954
+Model 5 test rmse = 0.116241
+Model 6 best validation rmse = 0.073193 on epoch 697
+Model 6 test rmse = 0.106052
+Model 7 best validation rmse = 0.065689 on epoch 1084
+Model 7 test rmse = 0.094970
+Model 8 best validation rmse = 0.070011 on epoch 811
+Model 8 test rmse = 0.114602
+Model 9 best validation rmse = 0.067224 on epoch 467
+Model 9 test rmse = 0.104640
+Ensemble test rmse = 0.073860
+Fold 3
+Model 0 best validation rmse = 0.076650 on epoch 549
+Model 0 test rmse = 0.123312
+Model 1 best validation rmse = 0.072961 on epoch 292
+Model 1 test rmse = 0.133053
+Model 2 best validation rmse = 0.073605 on epoch 381
+Model 2 test rmse = 0.128170
+Model 3 best validation rmse = 0.073919 on epoch 199
+Model 3 test rmse = 0.143359
+Model 4 best validation rmse = 0.074181 on epoch 398
+Model 4 test rmse = 0.131936
+Model 5 best validation rmse = 0.074364 on epoch 562
+Model 5 test rmse = 0.132834
+Model 6 best validation rmse = 0.073110 on epoch 442
+Model 6 test rmse = 0.131490
+Model 7 best validation rmse = 0.071585 on epoch 59
+Model 7 test rmse = 0.153051
+Model 8 best validation rmse = 0.076390 on epoch 408
+Model 8 test rmse = 0.128320
+Model 9 best validation rmse = 0.073355 on epoch 352
+Model 9 test rmse = 0.127217
+Ensemble test rmse = 0.102737
+Fold 4
+Model 0 best validation rmse = 0.082277 on epoch 479
+Model 0 test rmse = 0.125576
+Model 1 best validation rmse = 0.074660 on epoch 429
+Model 1 test rmse = 0.114721
+Model 2 best validation rmse = 0.077251 on epoch 737
+Model 2 test rmse = 0.119692
+Model 3 best validation rmse = 0.072210 on epoch 962
+Model 3 test rmse = 0.121357
+Model 4 best validation rmse = 0.074526 on epoch 484
+Model 4 test rmse = 0.118356
+Model 5 best validation rmse = 0.078495 on epoch 323
+Model 5 test rmse = 0.125741
+Model 6 best validation rmse = 0.077866 on epoch 364
+Model 6 test rmse = 0.123167
+Model 7 best validation rmse = 0.076571 on epoch 494
+Model 7 test rmse = 0.129396
+Model 8 best validation rmse = 0.078930 on epoch 328
+Model 8 test rmse = 0.112320
+Model 9 best validation rmse = 0.075937 on epoch 344
+Model 9 test rmse = 0.113671
+Ensemble test rmse = 0.093902
+5-fold cross validation
+	Seed 42 ==> test rmse = 0.060346
+	Seed 43 ==> test rmse = 0.104541
+	Seed 44 ==> test rmse = 0.073860
+	Seed 45 ==> test rmse = 0.102737
+	Seed 46 ==> test rmse = 0.093902
+Overall test rmse = 0.087077 +/- 0.017240
+Elapsed time = 1 day, 18:44:17

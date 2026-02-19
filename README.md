@@ -69,6 +69,9 @@ Note: You can adjust the gating strategy (--vgae-gate), predictor weights (--wei
 5. Analysis and Plotting
 Generate paper-ready figures, radar charts, and chemical space visualizations (t-SNE/UMAP).
 
+Bash
+sbatch gpu_aizynth_3.sh
+
 🤝 Contributing and Future Innovations
 This repository is intended to serve as a foundational framework for generative molecular design. We strongly encourage the computational chemistry and machine learning communities to build upon this work.
 
@@ -84,6 +87,4 @@ Adapting the SELFIES generator for more complex constrained optimizations.
 
 If you have an idea, find a bug, or want to contribute a new feature, please feel free to open an issue for discussion or submit a pull request.
 
-Bash
-sbatch gpu_aizynth_3.sh
 

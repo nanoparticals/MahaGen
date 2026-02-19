@@ -69,6 +69,21 @@ Note: You can adjust the gating strategy (--vgae-gate), predictor weights (--wei
 5. Analysis and Plotting
 Generate paper-ready figures, radar charts, and chemical space visualizations (t-SNE/UMAP).
 
+🤝 Contributing and Future Innovations
+This repository is intended to serve as a foundational framework for generative molecular design. We strongly encourage the computational chemistry and machine learning communities to build upon this work.
+
+Whether you want to propose algorithmic improvements to the VGAE gating mechanism, design novel multi-objective reward functions, or adapt the pipeline to entirely new chemical domains beyond electrolytes, organic photovoltaics, and energetic materials—your innovations are highly welcome!
+
+Ideas for Innovation:
+
+Integrating alternative graph neural network architectures for the prior.
+
+Expanding the heuristic reward penalizations for different target properties.
+
+Adapting the SELFIES generator for more complex constrained optimizations.
+
+If you have an idea, find a bug, or want to contribute a new feature, please feel free to open an issue for discussion or submit a pull request.
+
 Bash
 sbatch gpu_aizynth_3.sh
 

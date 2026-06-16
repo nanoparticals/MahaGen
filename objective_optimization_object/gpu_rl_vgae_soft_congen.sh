@@ -5,8 +5,8 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4
 #SBATCH --gres=gpu:1
-#SBATCH --error=%j.err              # 输出错误日志
-#SBATCH --output=%j.out             # 输出标准日志
+#SBATCH --error=%j.err             
+#SBATCH --output=%j.out            
 #SBATCH --account=users
 
 ###

@@ -59,7 +59,7 @@ sbatch gpu_gen_condition_origin.sh
 Fine-tune the generator to maximize property rewards while staying within the VGAE latent boundaries.
 
 sbatch gpu_rl_vgae_soft_congen.sh
-Note: You can adjust the gating strategy (--vgae-gate), predictor weights (--weights), and duplication penalties directly in the shell script.
+Note: `--vgae-gate off` disables hard OOD rejection during reward evaluation. In this mode, molecules outside the VGAE latent boundary are still evaluated by the property predictors and receive continuous rewards instead of being zeroed out or assigned a fixed rejection penalty. This setting is recommended for smoother RL optimization. The VGAE can still contribute a soft latent-space regularization term when `--vgae-weight` is greater than zero. Sampling-time hard gating is controlled separately by `--sample-hard-gate`; use `--vgae-gate threshold:<value>` only when hard rejection is also desired during reward evaluation. Predictor weights (`--weights`) and duplication penalties can likewise be adjusted directly in the shell script.
 
 5. Analysis and Plotting
 Generate paper-ready figures, radar charts, and chemical space visualizations (t-SNE/UMAP).

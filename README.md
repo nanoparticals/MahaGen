@@ -1,4 +1,4 @@
-# Generative Molecular Design via Multi-Objective RL and VGAE Gating
+# MahaGen: Generative Molecular Design via Multi-Objective RL and VGAE Gating
 
 This repository contains the official implementation of our framework for targeted molecular design. It leverages a Stack-Augmented RNN sequence generator (operating on SELFIES) fine-tuned via Multi-Objective Reinforcement Learning (RL). To ensure chemical validity and adherence to the target chemical space, the RL agent is constrained by a Variational Graph Autoencoder (VGAE) acting as a latent-space gatekeeper.
 
